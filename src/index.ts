@@ -1,6 +1,7 @@
 import Phaser from 'phaser'
 import MineWallsTileset from '../assets/MineWallsTileset.png'
 
+// load.image requires a string as a first argument, but declaring it as a variable allows for autocomplete and easier renaming.
 const mineWallsTileset = 'MineWallsTileset'
 
 class MyGame extends Phaser.Scene {
@@ -31,7 +32,5 @@ const config = {
   scene: MyGame
 }
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
 const game = new Phaser.Game(config)
-
-const test: string = 'test string'
-console.log(test)

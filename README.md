@@ -4,6 +4,8 @@ This is a basic template to start a Phaser 3 game using Typescript. It is heavil
 
 The template includes Jest as a testing library, and the Typescript version of StandardJS for code formatting and linting. It also uses Babel and Webpack to build code and enable hot reloading.
 
+<!-- TODO: Figure out why above repo says using import to get game images is not recommended and what the appropriate alternative is -->
+
 ## Requirements
 
 Node.js is required to install dependencies and run scripts. This template was created using Node v17.4.0 and npm v8.14.0.
