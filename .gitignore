@@ -113,3 +113,4 @@ Thumbs.db
 
 # Build
 dist/
+build/
