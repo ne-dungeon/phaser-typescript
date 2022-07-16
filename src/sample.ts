@@ -1,1 +1,3 @@
-export function sample () {}
+export function sample (): string {
+  return 'sample'
+}
