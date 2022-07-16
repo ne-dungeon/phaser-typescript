@@ -1,0 +1,37 @@
+{
+  "name": "phaser-typescript",
+  "version": "1.0.0",
+  "description": "Template setup to run and build a Phaser 3 project in Typescript, using Express as a web server and Jest for testing.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ne-dungeon/phaser-typescript.git"
+  },
+  "keywords": [
+    "phaser3",
+    "phaser",
+    "typescript",
+    "express",
+    "jest"
+  ],
+  "author": "Anna Dunster",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ne-dungeon/phaser-typescript/issues"
+  },
+  "homepage": "https://github.com/ne-dungeon/phaser-typescript#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "phaser": "^3.55.2",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "jest": "^28.1.3",
+    "ts-jest": "^28.0.6",
+    "ts-standard": "^11.0.0"
+  }
+}
