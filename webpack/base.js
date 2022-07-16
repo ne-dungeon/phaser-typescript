@@ -15,11 +15,11 @@ module.exports = {
           loader: 'babel-loader'
         }
       },
-      {
-        test: /\.js$/,
-        use: ['source-map-loader'],
-        enforce: 'pre'
-      },
+      // {
+      //   test: /\.js$/,
+      //   use: ['source-map-loader'],
+      //   enforce: 'pre'
+      // },
       {
         test: [/\.vert$/, /\.frag$/],
         use: 'raw-loader'
