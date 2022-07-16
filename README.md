@@ -1,6 +1,6 @@
 # Phaser 3 Typescript Project Template
 
-This is a basic template to start a Phaser 3 game using Typescript. It is heavily based on the official [Phaser 3 Project Template](https://github.com/photonstorm/phaser3-project-template) repository, with the addition of Typescript transpilation, and on M.S. Farzan's [tutorial for using Express to serve a Phaser game](https://www.freecodecamp.org/news/how-to-build-a-multiplayer-card-game-with-phaser-3-express-and-socket-io/).
+This is a basic template to start a Phaser 3 game using Typescript. It is heavily based on the official [Phaser 3 Project Template](https://github.com/photonstorm/phaser3-project-template) repository, with the addition of Typescript transpilation.
 
 The template includes Jest as a testing library, and the Typescript version of StandardJS for code formatting and linting. It also uses Babel and Webpack to build code and enable hot reloading.
 

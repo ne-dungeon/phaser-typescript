@@ -1,7 +1,7 @@
 {
   "name": "phaser-typescript",
   "version": "1.0.0",
-  "description": "Template setup to run and build a Phaser 3 project in Typescript, using Express as a web server and Jest for testing.",
+  "description": "Template setup to run and build a Phaser 3 project in Typescript, using Jest for unit testing.",
   "main": "src/index.ts",
   "scripts": {
     "build": "webpack --config webpack/prod.js ",
@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/ne-dungeon/phaser-typescript#readme",
   "dependencies": {
-    "express": "^4.18.1",
     "phaser": "^3.55.2",
     "typescript": "^4.7.4"
   },
