@@ -5,7 +5,7 @@ const TerserPlugin = require('terser-webpack-plugin')
 module.exports = merge(base, {
   mode: 'production',
   output: {
-    filename: 'bundle.min.js',
+    filename: '[name].min.js',
     clean: true
   },
   devtool: 'source-map',
@@ -14,6 +14,9 @@ module.exports = merge(base, {
     maxAssetSize: 900000
   },
   optimization: {
+    splitChunks: {
+      chunks: 'all'
+    },
     minimizer: [
       new TerserPlugin({
         terserOptions: {
