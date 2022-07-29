@@ -1,7 +1,5 @@
 const webpack = require('webpack')
-const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -12,14 +10,14 @@ module.exports = {
         test: /\.ts$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
+          loader: 'ts-loader'
         }
       },
-      // {
-      //   test: /\.js$/,
-      //   use: ['source-map-loader'],
-      //   enforce: 'pre'
-      // },
+      {
+        test: /\.ts$/,
+        use: ['source-map-loader'],
+        enforce: 'pre'
+      },
       {
         test: [/\.vert$/, /\.frag$/],
         use: 'raw-loader'
@@ -32,9 +30,6 @@ module.exports = {
   },
   resolve: { extensions: ['.js', '.ts', '.json'] },
   plugins: [
-    new CleanWebpackPlugin({
-      root: path.resolve(__dirname, '../')
-    }),
     new webpack.DefinePlugin({
       CANVAS_RENDERER: JSON.stringify(true),
       WEBGL_RENDERER: JSON.stringify(true)
