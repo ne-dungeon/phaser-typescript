@@ -9,12 +9,17 @@ module.exports = {
       {
         test: /\.ts$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'ts-loader'
-        }
+        use: [
+          {
+            loader: 'babel-loader'
+          },
+          {
+            loader: 'ts-loader'
+          }
+        ]
       },
       {
-        test: /\.ts$/,
+        test: /\.js$/,
         use: ['source-map-loader'],
         enforce: 'pre'
       },
