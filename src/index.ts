@@ -1,11 +1,12 @@
 import Phaser from 'phaser'
-// import MineWallsTileset from '../assets/MineWallsTileset.png'
+// import MineWallsTileset from '../public/assets/MineWallsTileset.png'
 
 // load.image requires a string as a first argument, but declaring it as a variable allows for autocomplete and easier renaming.
 const mineWallsTileset: string = 'MineWallsTileset'
 
 class MyGame extends Phaser.Scene {
   preload (): void {
+    // this.load.image(mineWallsTileset, MineWallsTileset)
     this.load.image(mineWallsTileset, './assets/MineWallsTileset.png')
   }
 
